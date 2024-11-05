@@ -21,5 +21,4 @@ docker load -i omics.tar.gz
 
 docker-compose up -d
 
-echo "Now you can use your metabobank in $(hostname -I | awk '{print $1}'):8085 or 127.0.0.1:8085"
-    
+echo "Now you can use your metabobank in $(hostname -I | awk '{print $1}'):8085 or 127.0.0.1:8085" 
