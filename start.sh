@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 wget http://116.204.100.57/metabobank/outmongo.tar.gz
