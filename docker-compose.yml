@@ -1,4 +1,4 @@
-version: "4.4"
+version: "0.0.0"
 services:
   omics:
     image: omics_r43:v2.0
