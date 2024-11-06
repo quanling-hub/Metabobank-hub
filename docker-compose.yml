@@ -1,4 +1,4 @@
-version: "5.6.7.8"
+version: "5678"
 services:
   omics:
     image: omics_r43:v2.0
@@ -26,4 +26,4 @@ services:
       meta_net:
         ipv4_address: 172.16.1.2
   mongodb:
-    image: mongod:1.2.4"172.16.1.0/24" 
+    image: mongod:124"172.16.1.0/24" 
