@@ -26,4 +26,22 @@ services:
       meta_net:
         ipv4_address: 172.16.1.2
   mongodb:
-    image: mongod:v1234"172.16.1.0/24" 
+    image: mongod:v1234
+    ports:
+       - 27027:27027
+    environment:
+       - TZ=Asia/Shanghai
+    command: /mongodb/bin/mongod_client_free --config /mongodb/conf/mongodb.conf
+    volumes:
+       - /mongodb/conf:/mongodb/conf
+       - /mongodb/dbs:/mongodb/dbs
+       - /mongodb/logs:/mongodb/logs
+    networks:
+      meta_net:
+        ipv4_address: 172.16.1.3
+networks:
+  meta_net:
+    ipam:
+      driver: default
+      config:
+        - subnet: "172.16.1.0/24" 
