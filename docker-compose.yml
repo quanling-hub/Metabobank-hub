@@ -26,7 +26,7 @@ services:
       meta_net:
         ipv4_address: 172.16.1.2
   mongodb:
-    image: mongod:666
+    image: mongod:777
     ports:
        - 27027:27027
     environment:
