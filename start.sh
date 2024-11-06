@@ -2,7 +2,7 @@
 
 wget http://116.204.100.57/metabobank/outmongo.tar.gz
 wget http://116.204.100.57/metabobank/nsmetabobank.tar.gz
-wget http://116.204.100.57/metabobank/mongod_124.tar.gz
+wget http://116.204.100.57/metabobank/mongod_1.2.4.tar.gz
 wget http://116.204.100.57/metabobank/omics.tar.gz
 
 tar -xzvf data1.tar.gz -C /
@@ -15,7 +15,7 @@ tar -xzvf outmongo.tar.gz -C /
 
 docker load -i nsmetabobank.tar.gz
 
-docker load -i mongod_124.tar.gz
+docker load -i mongod_1.2.4.tar.gz
 
 docker load -i omics.tar.gz
 
