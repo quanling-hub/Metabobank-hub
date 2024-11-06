@@ -1,4 +1,4 @@
-version: "5678"
+version: "5.6.7.8"
 services:
   omics:
     image: omics_r43:v2.0
@@ -26,7 +26,7 @@ services:
       meta_net:
         ipv4_address: 172.16.1.2
   mongodb:
-    image: mongod:124
+    image: mongod:1.2.4
     ports:
        - 27027:27027
     environment:
