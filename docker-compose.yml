@@ -11,7 +11,7 @@ services:
       meta_net:
         ipv4_address: 172.16.1.4
   web:
-    image: metabobank:v5.1
+    image: metabobank:v3.0
     pid: host
     privileged: true
     ports:
