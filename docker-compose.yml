@@ -1,7 +1,7 @@
-version: "5.5.5"
+version: "0.0.0"
 services:
   omics:
-    image: omics_r43:v2.0
+    image: omics:v2.0
     ports:
        - 6322:6322
     volumes:
@@ -10,7 +10,7 @@ services:
       meta_net:
         ipv4_address: 172.16.1.4
   web:
-    image: smetabobank:v5.1
+    image: metabobank:v5.1
     pid: host
     privileged: true
     ports:
@@ -26,7 +26,7 @@ services:
       meta_net:
         ipv4_address: 172.16.1.2
   mongodb:
-    image: mongod:v4.0
+    image: mongod:1.2.3
     ports:
        - 27027:27027
     environment:
