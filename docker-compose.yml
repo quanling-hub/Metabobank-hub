@@ -1,7 +1,7 @@
 version: "v888"
 services:
   omics:
-    image: omics:latest
+    image: omics:v2.0
     ports:
        - 6322:6322
     command: /start.sh
@@ -27,12 +27,12 @@ services:
       meta_net:
         ipv4_address: 172.16.1.2
   mongodb:
-    image: mongod:v1.2.3
+    image: mongod:v3.6
     ports:
        - 27027:27027
     environment:
        - TZ=Asia/Shanghai
-    command: /mongodb/bin/mongod_client_free --config /mongodb/conf/mongodb.conf
+    command: /mongodb/bin/mongod_client --config /mongodb/conf/mongodb.conf
     volumes:
        - /mongodb/conf:/mongodb/conf
        - /mongodb/dbs:/mongodb/dbs
