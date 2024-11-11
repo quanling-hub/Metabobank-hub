@@ -1,7 +1,7 @@
 version: "latest"
 services:
   omics:
-    image: omics:v2.0
+    image: omics:v1.0
     ports:
        - 6322:6322
     command: /start.sh
